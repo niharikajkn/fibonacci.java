@@ -1,0 +1,23 @@
+import java.lang.*;
+import java.util.*;
+class Fibonacci
+{
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        int first,second,third,n,i;
+        first=0;
+        second=1;
+        System.out.println("Enter max: ");
+        n=s.nextInt();
+        System.out.println("Fibonacci series: ");
+        System.out.println(first+"\n"+second);
+        for(i=1;i<n;i++)
+        {
+            third=first+second;
+            first=second;
+            second=third;
+            System.out.println(third);
+        }
+    }
+}
